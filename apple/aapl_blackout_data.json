@@ -1,0 +1,215 @@
+{
+  "report_metadata": {
+    "generated_date": "2026-01-16",
+    "data_start": "2012-01-01",
+    "data_end": "2026-01-16",
+    "total_cycles": 56,
+    "january_cycles": 14,
+    "version": "1.0"
+  },
+  "current_cycle": {
+    "earnings_date": "2026-01-29",
+    "blackout_start": "2025-12-25",
+    "blackout_end": "2026-01-31",
+    "optimal_exit": "2026-02-14",
+    "current_day": 22,
+    "total_days": 35,
+    "progress_pct": 62.9,
+    "aapl_return_pct": -5.56,
+    "spy_return_pct": 0.28,
+    "excess_return_pct": -5.84,
+    "phase": "mid_blackout",
+    "phases": {
+      "early_blackout": {"start_day": 1, "end_day": 14, "start_date": "2025-12-25", "end_date": "2026-01-08", "status": "complete"},
+      "mid_blackout": {"start_day": 15, "end_day": 28, "start_date": "2026-01-08", "end_date": "2026-01-22", "status": "in_progress"},
+      "late_blackout": {"start_day": 29, "end_day": 35, "start_date": "2026-01-22", "end_date": "2026-01-29", "status": "ahead"},
+      "post_earnings": {"start_day": 36, "end_day": 50, "start_date": "2026-01-31", "end_date": "2026-02-14", "status": "ahead"}
+    }
+  },
+  "technicals": {
+    "current_price": 229,
+    "fifty_two_week_high": 260.10,
+    "pct_from_high": -12.0,
+    "fifty_day_ma": 236,
+    "two_hundred_day_ma": 220,
+    "above_50ma": false,
+    "above_200ma": true,
+    "pre_blackout_momentum": "negative",
+    "regime": "weak"
+  },
+  "overall_summary": {
+    "total_periods": 56,
+    "avg_excess_return": 0.68,
+    "underperformance_rate": 42.9,
+    "t_stat": 0.21,
+    "p_value": 0.8355,
+    "significant": false,
+    "thesis_supported": false
+  },
+  "january_summary": {
+    "total_periods": 14,
+    "avg_excess_return": -2.02,
+    "underperformance_rate": 57.1,
+    "p_value": 0.507,
+    "significant": false
+  },
+  "timing_analysis": {
+    "early_blackout": {
+      "label": "Early Blackout",
+      "days": "1-14",
+      "avg_aapl_pct": -1.42,
+      "avg_spy_pct": 0.57,
+      "avg_excess_pct": -1.99,
+      "win_rate": 23.1,
+      "count": 13,
+      "implication": "WEAKNESS"
+    },
+    "mid_blackout": {
+      "label": "Mid Blackout",
+      "days": "15-28",
+      "avg_aapl_pct": 0.08,
+      "avg_spy_pct": 0.90,
+      "avg_excess_pct": -0.82,
+      "win_rate": 61.5,
+      "count": 13,
+      "implication": "TRANSITION"
+    },
+    "late_blackout": {
+      "label": "Late Blackout",
+      "days": "29-35",
+      "avg_aapl_pct": 1.36,
+      "avg_spy_pct": -0.43,
+      "avg_excess_pct": 1.79,
+      "win_rate": 76.9,
+      "count": 13,
+      "implication": "STRENGTH"
+    },
+    "post_earnings": {
+      "label": "Post Earnings",
+      "days": "36-37",
+      "avg_aapl_pct": -0.63,
+      "avg_spy_pct": 0.05,
+      "avg_excess_pct": -0.68,
+      "win_rate": 46.2,
+      "count": 13,
+      "implication": "VOLATILE"
+    }
+  },
+  "regime_analysis": {
+    "weak_regime": {
+      "label": "Weak Regime",
+      "conditions": ["Below 50-day MA", ">10% off 52-week high", "Negative pre-blackout momentum"],
+      "count": 4,
+      "avg_excess_pct": -4.64,
+      "underperf_rate": 75.0
+    },
+    "strong_regime": {
+      "label": "Strong Regime",
+      "conditions": ["Above 50-day MA", "Near 52-week highs", "Positive pre-blackout momentum"],
+      "count": 9,
+      "avg_excess_pct": -0.32,
+      "underperf_rate": 44.4
+    }
+  },
+  "post_earnings_recovery": {
+    "windows": [
+      {"days": 2, "avg_excess_pct": 0.80, "win_rate": 53.8},
+      {"days": 5, "avg_excess_pct": 0.79, "win_rate": 61.5},
+      {"days": 10, "avg_excess_pct": 1.24, "win_rate": 69.2},
+      {"days": 15, "avg_excess_pct": 1.95, "win_rate": 76.9, "optimal": true},
+      {"days": 20, "avg_excess_pct": 1.40, "win_rate": 69.2}
+    ]
+  },
+  "trade_recommendation": {
+    "action": "BUY",
+    "confidence": "medium-high",
+    "entry_window": {
+      "start": "2026-01-16",
+      "end": "2026-01-22",
+      "price_approx": 229
+    },
+    "exit": {
+      "date": "2026-02-14",
+      "rationale": "15-day post-earnings optimal window"
+    },
+    "expected_excess_return_pct": 3.74,
+    "historical_win_rate": 76.9,
+    "stop_loss": {
+      "level": "200-day MA or -5%",
+      "price_approx": 218
+    },
+    "risk_reward_ratio": "1:2"
+  },
+  "monthly_performance": [
+    {"month": 1, "name": "January", "count": 11, "avg_excess_pct": -2.02, "underperf_rate": 54.5, "p_value": 0.507, "significant": false},
+    {"month": 2, "name": "February", "count": 3, "avg_excess_pct": -1.68, "underperf_rate": 66.7, "p_value": 0.825, "significant": false},
+    {"month": 4, "name": "April", "count": 9, "avg_excess_pct": -0.40, "underperf_rate": 33.3, "p_value": 0.878, "significant": false},
+    {"month": 5, "name": "May", "count": 5, "avg_excess_pct": 2.08, "underperf_rate": 20.0, "p_value": 0.515, "significant": false},
+    {"month": 7, "name": "July", "count": 11, "avg_excess_pct": 3.46, "underperf_rate": 36.4, "p_value": 0.032, "significant": true},
+    {"month": 8, "name": "August", "count": 3, "avg_excess_pct": 1.69, "underperf_rate": 33.3, "p_value": 0.704, "significant": false},
+    {"month": 10, "name": "October", "count": 11, "avg_excess_pct": 0.47, "underperf_rate": 54.5, "p_value": 0.789, "significant": false},
+    {"month": 11, "name": "November", "count": 3, "avg_excess_pct": 3.35, "underperf_rate": 33.3, "p_value": 0.396, "significant": false}
+  ],
+  "quarterly_performance": [
+    {"quarter": "Q1", "label": "Q1 (Oct-Dec)", "count": 14, "avg_excess_pct": -1.95, "underperf_rate": 57.1, "p_value": 0.465, "significant": false},
+    {"quarter": "Q2", "label": "Q2 (Jan-Mar)", "count": 14, "avg_excess_pct": 0.49, "underperf_rate": 28.6, "p_value": 0.801, "significant": false},
+    {"quarter": "Q3", "label": "Q3 (Apr-Jun)", "count": 14, "avg_excess_pct": 3.08, "underperf_rate": 35.7, "p_value": 0.034, "significant": true},
+    {"quarter": "Q4", "label": "Q4 (Jul-Sep)", "count": 14, "avg_excess_pct": 1.08, "underperf_rate": 50.0, "p_value": 0.474, "significant": false}
+  ],
+  "yearly_performance": [
+    {"year": 2012, "count": 3, "avg_excess_pct": -4.14, "underperf_rate": 66.7},
+    {"year": 2013, "count": 4, "avg_excess_pct": -7.91, "underperf_rate": 75.0},
+    {"year": 2014, "count": 4, "avg_excess_pct": 1.27, "underperf_rate": 25.0},
+    {"year": 2015, "count": 4, "avg_excess_pct": 1.38, "underperf_rate": 50.0},
+    {"year": 2016, "count": 4, "avg_excess_pct": -3.01, "underperf_rate": 50.0},
+    {"year": 2017, "count": 4, "avg_excess_pct": 6.15, "underperf_rate": 0.0},
+    {"year": 2018, "count": 4, "avg_excess_pct": 0.62, "underperf_rate": 50.0},
+    {"year": 2019, "count": 4, "avg_excess_pct": 5.67, "underperf_rate": 25.0},
+    {"year": 2020, "count": 4, "avg_excess_pct": 6.36, "underperf_rate": 25.0},
+    {"year": 2021, "count": 4, "avg_excess_pct": 1.21, "underperf_rate": 25.0},
+    {"year": 2022, "count": 4, "avg_excess_pct": 2.10, "underperf_rate": 50.0},
+    {"year": 2023, "count": 4, "avg_excess_pct": 3.10, "underperf_rate": 25.0},
+    {"year": 2024, "count": 4, "avg_excess_pct": 1.21, "underperf_rate": 50.0},
+    {"year": 2025, "count": 4, "avg_excess_pct": -4.12, "underperf_rate": 75.0},
+    {"year": 2026, "count": 1, "avg_excess_pct": -5.84, "underperf_rate": 100.0}
+  ],
+  "january_cycles": [
+    {"earnings_date": "2026-01-29", "blackout_start": "2025-12-25", "aapl_return_pct": -5.56, "spy_return_pct": 0.28, "excess_return_pct": -5.84, "outcome": "underperform", "regime": "weak", "current": true},
+    {"earnings_date": "2025-01-30", "blackout_start": "2024-12-26", "aapl_return_pct": -8.89, "spy_return_pct": 0.08, "excess_return_pct": -8.97, "outcome": "underperform", "regime": "strong"},
+    {"earnings_date": "2024-02-01", "blackout_start": "2023-12-28", "aapl_return_pct": -3.99, "spy_return_pct": 3.70, "excess_return_pct": -7.70, "outcome": "underperform", "regime": "strong"},
+    {"earnings_date": "2023-02-02", "blackout_start": "2022-12-29", "aapl_return_pct": 19.20, "spy_return_pct": 7.54, "excess_return_pct": 11.66, "outcome": "outperform", "regime": "weak"},
+    {"earnings_date": "2022-01-27", "blackout_start": "2021-12-23", "aapl_return_pct": -3.38, "spy_return_pct": -6.09, "excess_return_pct": 2.71, "outcome": "outperform", "regime": "strong"},
+    {"earnings_date": "2021-01-27", "blackout_start": "2020-12-23", "aapl_return_pct": 0.76, "spy_return_pct": 0.68, "excess_return_pct": 0.08, "outcome": "flat", "regime": "strong"},
+    {"earnings_date": "2020-01-28", "blackout_start": "2019-12-24", "aapl_return_pct": 13.93, "spy_return_pct": 2.01, "excess_return_pct": 11.92, "outcome": "outperform", "regime": "strong"},
+    {"earnings_date": "2019-01-29", "blackout_start": "2018-12-25", "aapl_return_pct": 5.90, "spy_return_pct": 9.65, "excess_return_pct": -3.75, "outcome": "underperform", "regime": "weak"},
+    {"earnings_date": "2018-02-01", "blackout_start": "2017-12-28", "aapl_return_pct": -6.18, "spy_return_pct": 2.83, "excess_return_pct": -9.01, "outcome": "underperform", "regime": "mixed"},
+    {"earnings_date": "2017-01-31", "blackout_start": "2016-12-27", "aapl_return_pct": 9.61, "spy_return_pct": 0.66, "excess_return_pct": 8.95, "outcome": "outperform", "regime": "strong"},
+    {"earnings_date": "2016-01-26", "blackout_start": "2015-12-22", "aapl_return_pct": -12.25, "spy_return_pct": -7.07, "excess_return_pct": -5.18, "outcome": "underperform", "regime": "weak"},
+    {"earnings_date": "2015-01-27", "blackout_start": "2014-12-23", "aapl_return_pct": 5.65, "spy_return_pct": -2.77, "excess_return_pct": 8.42, "outcome": "outperform", "regime": "mixed"},
+    {"earnings_date": "2014-01-27", "blackout_start": "2013-12-23", "aapl_return_pct": -12.16, "spy_return_pct": -2.84, "excess_return_pct": -9.33, "outcome": "underperform", "regime": "strong"},
+    {"earnings_date": "2013-01-23", "blackout_start": "2012-12-19", "aapl_return_pct": -16.42, "spy_return_pct": 4.87, "excess_return_pct": -21.29, "outcome": "underperform", "regime": "weak"}
+  ],
+  "january_recovery": [
+    {"earnings_date": "2025-01-30", "day_2": 1.43, "day_5": -0.67, "day_10": 3.06, "day_15": 5.40, "day_20": 7.45},
+    {"earnings_date": "2024-02-01", "day_2": 0.57, "day_5": -1.00, "day_10": -2.98, "day_15": -4.15, "day_20": -5.73},
+    {"earnings_date": "2023-02-02", "day_2": 0.62, "day_5": 0.11, "day_10": 1.52, "day_15": 1.32, "day_20": 0.12},
+    {"earnings_date": "2022-01-27", "day_2": -0.77, "day_5": -0.97, "day_10": -0.71, "day_15": -0.83, "day_20": -0.67},
+    {"earnings_date": "2021-01-27", "day_2": null, "day_5": -0.22, "day_10": -2.18, "day_15": -3.29, "day_20": -6.71},
+    {"earnings_date": "2020-01-28", "day_2": null, "day_5": 0.40, "day_10": 0.11, "day_15": 0.30, "day_20": -1.00},
+    {"earnings_date": "2019-01-29", "day_2": null, "day_5": 3.64, "day_10": 1.98, "day_15": 0.07, "day_20": 0.44},
+    {"earnings_date": "2018-02-01", "day_2": 2.21, "day_5": 1.28, "day_10": 5.24, "day_15": 7.16, "day_20": 8.52},
+    {"earnings_date": "2017-01-31", "day_2": null, "day_5": 2.34, "day_10": 2.21, "day_15": 3.09, "day_20": 3.13},
+    {"earnings_date": "2016-01-26", "day_2": null, "day_5": 0.23, "day_10": 2.42, "day_15": 0.74, "day_20": 0.27},
+    {"earnings_date": "2015-01-27", "day_2": null, "day_5": -0.26, "day_10": -0.01, "day_15": 3.72, "day_20": 4.79},
+    {"earnings_date": "2014-01-27", "day_2": 0.75, "day_5": 3.95, "day_10": 4.35, "day_15": 6.82, "day_20": 6.05},
+    {"earnings_date": "2013-01-23", "day_2": null, "day_5": 1.50, "day_10": 1.13, "day_15": 5.05, "day_20": 1.53}
+  ],
+  "buyback_context": {
+    "fy2025_buybacks_billions": 90.7,
+    "quarterly_pace_billions": "20-25",
+    "cumulative_since_2012_billions": 650,
+    "pct_of_sp500_buybacks": 10,
+    "avg_daily_volume_millions": 42,
+    "rule_10b18_max_daily_millions": 10.5
+  }
+}
