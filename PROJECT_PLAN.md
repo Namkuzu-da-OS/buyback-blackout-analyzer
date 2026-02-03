@@ -182,10 +182,15 @@ A multi-component trading system that identifies high-conviction entry points du
 - Earnings database for: AAPL, GOOGL, META, MSFT, NVDA, AMZN
 - Apple-specific analysis and results in `/apple` folder
 
-**What's validated:**
-- Apple shows clear blackout effect
-- Late blackout = buying opportunity (77% win rate)
-- Post-earnings recovery is strong
+**Apple Archetype (THE TEMPLATE):**
+See `apple/APPLE_ARCHETYPE.md` - This is the canonical reference for the strategy.
+
+Key validated findings from Apple (14 years, 56 cycles):
+- Early blackout (Days 1-14): -1.99% excess, 23% win rate → WEAKNESS
+- Mid blackout (Days 15-28): -0.82% excess, 62% win rate → TRANSITION
+- Late blackout (Days 29-35): **+1.79% excess, 77% win rate → BUY ZONE**
+- Post-earnings 15-day: **+1.95% excess, 77% win rate → HOLD**
+- Combined late + recovery: **+3.74% expected excess return**
 
 **What needs validation:**
 - Does pattern hold for GOOGL, META, MSFT, NVDA, AMZN?
@@ -274,6 +279,26 @@ buyback-blackout-analyzer/
 ├── PROJECT_PLAN.md          # This file
 └── README.md
 ```
+
+---
+
+## Preserved Data & Reference Files
+
+**Apple Archetype (in `/apple/`):**
+| File | Purpose |
+|------|---------|
+| `APPLE_ARCHETYPE.md` | **THE TEMPLATE** - Canonical reference for methodology |
+| `AAPL_BLACKOUT_REPORT.md` | Full narrative report with all findings |
+| `aapl_blackout_data.json` | Structured data for programmatic use |
+| `aapl_blackout_results.csv` | All 56 blackout periods with returns |
+| `aapl_blackout_analysis.png` | Visualization charts |
+| `january_segment_analysis.csv` | Intra-blackout timing (the key finding) |
+| `january_regime_analysis.csv` | Weak vs strong regime performance |
+
+**If context is lost, start by reading:**
+1. This file (`PROJECT_PLAN.md`)
+2. `apple/APPLE_ARCHETYPE.md`
+3. `apple/AAPL_BLACKOUT_REPORT.md`
 
 ---
 
